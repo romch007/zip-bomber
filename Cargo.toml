@@ -1,0 +1,16 @@
+[package]
+name = "zip-bomber"
+description = "Tool to create zip bombs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Romain Chardiny <romain.chardiny@gmail.com>"]
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.94"
+clap = { version = "4.5.23", features = ["derive"] }
+indicatif = "0.17.9"
+parse-size = "1.1.0"
+zip = { version = "2.2.1", features = ["deflate"], default-features = false }
